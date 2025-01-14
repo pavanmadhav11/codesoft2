@@ -1,0 +1,615 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    background-color: black;
+    border-radius: 70px; 
+    padding: 0px 3px;
+    max-width: 1200px; 
+    margin: 20px auto; 
+}
+.nav p{
+    color: azure;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 20px;
+    
+}
+.options{
+    justify-content: space-between;
+    margin: 17px 10px;
+    cursor: pointer;
+    padding: 5px 9px;
+}
+.options:hover {
+    background-color: gold; 
+    border-radius: 20px;
+    padding: 5px 9px;
+    color: #fff; 
+    transform: scale(1.1);
+}
+.menu-btn {
+    display: none;
+}
+.hero{
+    background-image: url(imgs/main-bg.jpg);
+    background-repeat: no-repeat;
+    height: 96vh;
+    background-size: 2100px 600px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+.hero-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.hero-content h1{
+    font-size: 90px;
+    margin-top: -200px;
+    margin-bottom: 40px;
+    margin-left: 35px;
+}
+.hero-content p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.hero-content button{
+    padding: 10px 23px;
+    border-radius: 10px;
+    background-color: gold;
+    color: white;
+    border: orange 2px solid;
+}
+.hero-img img{
+   transform: scale(0.7);
+   border-radius: 78px;
+   margin-top: 28px;
+}
+.courses {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+.courses-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses-main h1 {
+    font-size: 55px;
+    margin-bottom: 8px;
+    margin-top: -310px;
+}
+
+.courses-main p {
+    font-size: 25px;
+    margin-bottom: -210px;
+}
+
+.courses-options img {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.courses-options {
+    margin: 0 90px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1%;
+}
+
+.courses-options-items {
+    padding: 50px 50px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.courses-options-items:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+}
+
+.courses-options div:first-child {
+    border-top-left-radius: 40px;
+}
+
+.courses-options div:last-child {
+    border-top-right-radius: 40px;
+}
+.about-us {
+    background-color: #f4f9fc;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-text {
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 55px;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 25px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text .btn {
+    display: inline-block;
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-text .btn:hover {
+    background-color: #155ab2;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.pricing {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+}
+.pricing h2{
+    font-size: 30px;
+    color:#1a73e8 ;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plan {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 50px 20px;
+    width: 350px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+    margin-bottom: 10px;
+}
+
+.plan p {
+    margin: 10px 0;
+    font-size: 19px;
+    color: #333;
+}
+
+.plan .prices{
+    font-size: 25px;
+    color: #1a73e8;
+    margin-bottom: 28px;
+}
+
+.plan button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 19px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.plan button:hover {
+    background: #0056b3;
+}
+.footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+}
+
+.footer-link {
+    color: #1a73e8;
+    text-decoration: none;
+}
+@media (max-width:1440px){
+    .hero-content h1{
+        font-size: 80px;
+        margin-top: -450px;
+        margin-bottom: 40px;
+        margin-left: 35px;
+    }
+    .courses h1{
+        margin-top: -600px;
+    }
+
+}
+@media(max-width:1024px){
+    .nav{
+        max-width: 850px;
+    }
+    .courses h1{
+        margin-top: -500px;
+    }
+    .hero-content h1{
+        font-size: 60px;
+        margin-top: -300px;
+        margin-bottom: 40px;
+        margin-left: 35px;
+    }
+    .hero-content p{
+        font-size: 22px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: -20px;
+    }
+    .hero-content button{
+        padding: 10px 23px;
+        border-radius: 10px;
+        background-color: gold;
+        color: white;
+        border: orange 2px solid;
+    }
+    .hero-img img{
+       transform: scale(0.7);
+       border-radius: 78px;
+       margin-top: 28px;
+       margin-left: 0;
+       margin-right: -50px;
+    }
+    .courses-options {
+        margin: 0 90px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2.5%;
+    }
+    .courses-options div:first-child {
+        border-top-left-radius: 40px;
+    }
+    .courses-options div:nth-child(3){
+        border-top-right-radius: 40px; 
+    }
+    .courses-options div:nth-child(4){
+        border-bottom-left-radius: 40px; 
+    }
+    .courses-options div:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 40px;
+    }
+    .about-container {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+    .about-text p{
+        font-size: 20px;
+    }
+    .pricing h2{
+        font-size: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .nav{
+        max-width: 748px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+    .hero-content {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin-top: 400px;
+        padding: 0px;
+    }
+    .hero-content h1{
+        font-size: 37px;
+        margin-top: -460px;
+        margin-left: 35px;
+    }
+    .hero-content p{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: -20px;
+    }
+    .hero-content button{
+        padding: 10px 23px;
+        border-radius: 10px;
+        background-color: gold;
+        color: white;
+        border: orange 2px solid;
+    }
+    .hero-img img{
+       transform: scale(0.5);
+       border-radius: 78px;
+       margin-top: -230px;
+       margin-left: 110px;
+    }
+    .courses h1{
+        margin-top: -150px;
+        font-size: 30px;
+    }
+    .courses p{
+        font-size: 18px;
+    }
+    .courses-options {
+        margin: 90px 90px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2.5%;
+    }
+    .courses-options div:first-child {
+        border-top-left-radius: 40px;
+    }
+    .courses-options div:nth-child(2){
+        border-top-right-radius: 40px; 
+    }
+    .courses-options div:nth-child(3){
+        border-top-right-radius: 8px; 
+    }
+    .courses-options div:nth-child(4){
+        border-bottom-left-radius: 8px; 
+    }
+    .courses-options div:nth-child(5){
+        border-bottom-left-radius: 40px; 
+    }
+    .courses-options div:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 40px;
+    }
+    .courses-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-container {
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+    .about-text h2{
+        font-size: 40px;
+    }
+    .about-text p{
+        font-size: 15px;
+    }
+    .pricing p{
+        font-size: 15px;
+    }
+    .pricing h2{
+        font-size: 30px;
+    }
+}
+@media (max-width: 430px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center; 
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 50px;
+        position: relative;
+    }
+    .nav p {
+        font-size: 20px;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    .links {
+        display: none;
+        justify-content: center;
+        gap: 10px;
+    }
+    .links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-btn {
+        display: flex;
+        background: none;
+        border: none;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links.show {
+        display: flex;
+    }
+    .hero {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    .hero-content h1 {
+        font-size: 30px;
+        margin: -480px 0 0 0;
+    }
+    .hero-content p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    .hero-content button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .hero-img img {
+        transform: scale(0.25);
+        margin-left: -18%;
+
+    }
+    .courses h1 {
+        font-size: 25px;
+        margin: 20px 0 10px;
+    }
+    .courses-main p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .courses-options {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 20px 10px;
+    }
+    .courses-options-items {
+        padding: 20px;
+        font-size: 14px;
+    }
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .about-text h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .about-text p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .about-image img {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .pricing h2 {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+    .plans {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .plan {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .plan h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .plan p {
+        font-size: 14px;
+    }
+    .plan .prices {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .plan button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .footer-link {
+        font-size: 12px;
+    }
+    .courses-options div:first-child {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+    .courses-options div:nth-child(2){
+        border-top-right-radius: 8px; 
+    }
+    .courses-options div:nth-child(3){
+        border-top-right-radius: 8px; 
+    }
+    .courses-options div:nth-child(4){
+        border-bottom-left-radius: 8px; 
+    }
+    .courses-options div:nth-child(5){
+        border-bottom-left-radius: 8px; 
+    }
+    .courses-options div:last-child {
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .courses-options {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width:380px){
+    .hero-img img {
+        transform: scale(0.25);
+        margin-left: -28%;
+    }
+}
+@media (max-width:322px){
+    .hero-img img {
+        transform: scale(0.25);
+        margin-left: -40%;
+    }
+}
+
+
+
